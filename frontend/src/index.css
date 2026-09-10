@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0a0e14;
+    color: #f1f5f9;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d131a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #233345;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334b66;
+}
+
+/* Radar Scan Line */
+.radar-sweep-line {
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    rgba(6, 182, 212, 0) 0deg,
+    rgba(6, 182, 212, 0.03) 270deg,
+    rgba(6, 182, 212, 0.35) 360deg
+  );
+}
+
+/* Glow effects */
+.glow-emerald {
+  box-shadow: 0 0 20px -3px rgba(16, 185, 129, 0.25);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px -3px rgba(6, 182, 212, 0.25);
+}
+
+.glow-danger {
+  box-shadow: 0 0 20px -3px rgba(239, 68, 68, 0.3);
+}
